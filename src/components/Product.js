@@ -57,11 +57,7 @@ export default function Product() {
   return (
     <Card className={classes.root}>
       <CardHeader
-        avatar={
-          <Avatar aria-label="cake" className={classes.avatar}>
-            <Cake></Cake>
-          </Avatar>
-        }
+
         action={
           <Typography
             className={classes.action}
@@ -72,18 +68,15 @@ export default function Product() {
           </Typography>
         }
         title="Torta Oreo "
-        subheader="$1.000/ o Pedir con anticipacion/ categoria"
+       
       />
       <CardMedia
         className={classes.media}
-        image="https://lh3.googleusercontent.com/onOOnok64XiIYs7W1ADZy3JgAkPHQ9Og83lo1UgHmh_pmpZtvJ3OG4DsOo-YeRvph6LR0sZ9e8V4hVphLXuwJ5X_T4bN2pEYFvvsMKXRzoBGyE3bUqNEm5p5hZTo6Yw7Z8bvA9JG8y-hd9Nrnag9A0ehpSy_Z81PIgmkZQJ_hZW-yODR1BiUK7MxB4-k2OtMNjc3ddBfZ2mt7w-mayVgt1oTDisjtdv5mOAUiEkbfkRmW9MX8ZudmwX-CppmReQiq3xRW3agweQZCpwIr91Tg4AJgQiTGMK28tklsEaXbRSWuTpDFLuRq37bHJFmNvwxDU_IWmRDQv_jzTkdSqGuIZliRNyiHQrUIH_3dp2vc-71c322O74rhRwKzefNGq5HYey2kHSD86wE0IHogBO2kuAOcrXHenYKKtlOuMy94c6g2q0BXV8t7jYhQntaWOgmLdAyYjmD0coq0gXSIPoSyzuxE6C3NerwSSmSNTfdupsGhgsSYU2hLXm0CmMV39IP_FDrCFqPY0bG0N8hZkDW5UO6O0SnIBeZQTr-Cmh4_7YIZygQIegTj9fnBQx57F3qMOJ2T8mRjG4qrjf0yane8XYR5ziAKLBNncMXwTRqlhEABdUpDzE_e3140u_xEK8u_LnsR5b4Q0xlX2pFzwAOmcAaWWYFaNegaz3R9-UO8rTZukcc7pWqdaXGkYy2HZE=w327-h296-no?authuser=0"
+        image="https://lh3.googleusercontent.com/pw/ACtC-3dHq03jtbXNbUFE8bEv9ur-Fy3exFjIYpIknlMbivdFeuM_G3Fv-EpaywbWSDM0aZUaf8bdeH47COxcGVoBgeVLCfvDIE5yVdPRA3zXIFDqZ6fm3YH2dhheeFQNFXZFHgMUcxKfINf1GME7KsAxWhYmzg=w1095-h881-no?authuser=0"
         title="Choco Torta"
       />
       <CardContent className={classes.content}>
-        <Typography variant="body2" color="textSecondary" component="p">
-          Torta Oreo 💘 para comer helada. La guardas en el freezer y cuchareás
-          cuando te agarren ganas de algo dulce 🤤
-        </Typography>
+
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="Add to Cart" onClick={"addToBasket"}>
@@ -105,6 +98,10 @@ export default function Product() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
+        <Typography variant="body2" color="textSecondary" component="p">
+          Torta Oreo 💘 para comer helada. La guardas en el freezer y cuchareás
+          cuando te agarren ganas de algo dulce 🤤
+        </Typography>
           <Typography paragraph>Clientes Satisfechos:</Typography>
           <Typography paragraph>
             o podes poner descripcion del producto, ingredientes etc:

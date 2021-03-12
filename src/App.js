@@ -1,12 +1,12 @@
-
-import './App.css';
-import Product from "./components/Product"
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Product from "./components/Product";
 
 function App() {
   return (
     <div className="App">
-      <h1> my app dot</h1>
-      <Product></Product>
+      <Navbar />
+        <Product />
     </div>
   );
 }
