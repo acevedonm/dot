@@ -50,7 +50,7 @@ export default function Navbar() {
           </IconButton>
           <div className={classes.grow} />
 
-          <Typography variant="h6" >
+          <Typography variant="h6"  >
             ¡Bienvenidos!
           </Typography>
           <Button color="inherit" variant="outlined">Login</Button>

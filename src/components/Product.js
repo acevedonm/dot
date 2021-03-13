@@ -16,6 +16,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Cake,AddShoppingCart } from "@material-ui/icons";
 import accounting from "accounting"
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -46,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Product() {
+export default function Product({product: {id, name, productType, image, price, rating, description}}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -64,7 +65,7 @@ export default function Product() {
             variant="h5"
             color="textSecondary"
           >
-            {"$ 1.000"}
+            {price}
           </Typography>
         }
         title="Torta Oreo "
@@ -72,8 +73,8 @@ export default function Product() {
       />
       <CardMedia
         className={classes.media}
-        image="https://lh3.googleusercontent.com/pw/ACtC-3dHq03jtbXNbUFE8bEv9ur-Fy3exFjIYpIknlMbivdFeuM_G3Fv-EpaywbWSDM0aZUaf8bdeH47COxcGVoBgeVLCfvDIE5yVdPRA3zXIFDqZ6fm3YH2dhheeFQNFXZFHgMUcxKfINf1GME7KsAxWhYmzg=w1095-h881-no?authuser=0"
-        title="Choco Torta"
+        image={image}
+        title={name}
       />
       <CardContent className={classes.content}>
 
